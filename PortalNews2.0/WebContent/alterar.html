@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Alterar notícias</title>
+</head>
+<body>
+    <h1>RealNews</h1>
+    <hr>
+    <form action="Controller.do" method="post">
+        <center>
+            <p>id:</p>
+            <input type="text" name="id_alterar"><br>
+            <p>Título:</p>
+            <input type="text" name="titulo_alterar">
+            <br>
+            <p>Notícia:</p>
+            <textarea cols="40" rows="8" name="noticia_alterar"></textarea>
+            <br>
+            <p>Descricao:</p>
+            <textarea rows="5" cols="40" name="descricao_alterar"></textarea>
+            <br>
+            <input type="hidden" name="command" value="AlterarNoticia">
+            <br>
+            <input type="submit" value="OK">
+        </center>
+    </form>
+</body>
+</html>

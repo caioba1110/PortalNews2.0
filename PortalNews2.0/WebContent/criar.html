@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <title>Criar nova notícia</title>
+</head>
+<body>
+    <h1>RealNews</h1>
+    <hr>
+    <form action="Controller.do" method="post">
+        <center>
+            Título:
+            <div>
+                <input type="text" name="titulo_criar">
+            </div>
+            <br>
+            <p>Notícia:</p>
+            <textarea cols="40" rows="8" name="noticia_criar"></textarea>
+            <br>
+            <p>Descricao:</p>
+            <textarea rows="5" cols="40" name="descricao_criar"></textarea>
+            <br>
+            <input type="hidden" name="command" value="CadastroNoticia">
+            <br>
+            <input type="submit" value="OK">
+        </center>
+    </form>
+</body>
+</html>
